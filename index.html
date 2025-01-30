@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Hub</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">Game Hub</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#games">Games</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+    
+    <header id="home">
+        <h1>Welcome to Game Hub</h1>
+        <p>Explore and play amazing games!</p>
+    </header>
+    
+    <section id="games">
+        <h2>Available Games</h2>
+        <div class="game-container">
+            <div class="game">
+                <h3>Tic-Tac-Toeh </h3>
+                <a href="https://tictactoe-sable-ten.vercel.app/" target="_blank">
+                    <img src="photo1.png" alt="Game 1">
+                </a>
+            </div>
+            <div class="game">
+                <h3>Snake</h3>
+                <a href="https://www.crazygames.com/game/little-big-snake-io" target="_blank">
+                    <img src="snake.jpg" alt="Game 2">
+                </a>
+            </div>
+            <div class="game">
+                <h3>Ludo</h3>
+                <a href="https://ludoking.com/" target="_blank">
+                    <img src="ludo.png" alt="Game 3">
+                </a>
+            </div>
+            <div class="game">
+                <h3>Cricket</h3>
+                <a href="https://poki.com/en/g/cricket-hero" target="_blank">
+                    <img src="cricket.jpeg" alt="bye bye">
+            </div>
+            <div class="game">
+                <h3>Car game</h3>
+                <a href="https://poki.com/en/g/mr-racer-car-racing">
+                    <img src="car.jpeg" alt="tata">
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="foot">
+        <p>&copy; 2025 Game Hub. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Hamburger menu functionality
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+    </script>
+</body>
+</html>
